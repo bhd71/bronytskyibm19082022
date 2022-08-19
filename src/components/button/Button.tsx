@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import {IElementData} from "../chart/Chart";
 import './Button.css'
 
@@ -10,6 +10,13 @@ interface IButton {
 
 
 const Button: React.FC<IButton> = ({setData, data}) => {
+
+    const [date, setDate] = useState(1)
+
+    setInterval(() => {
+        clickHandler()
+        setDate(prevState => prevState++)
+    }, 34000)
 
 
     const clickHandler = () => {
