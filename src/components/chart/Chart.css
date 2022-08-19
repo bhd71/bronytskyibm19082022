@@ -1,0 +1,40 @@
+.Chart {
+    display: flex;
+    flex-direction: column;
+}
+
+.Chart_title {
+    position: relative;
+    left: 15%;
+}
+
+.Chart-row__flex {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+}
+
+.Chart-scale__background {
+    background-color: #e7e2e2;
+}
+
+.Chart-scale__field {
+    transition: .4s;
+    position: relative;
+    background-color: #A0D7DE;
+    height: 100%;
+    text-align: center;
+}
+
+.Chart-scale__field p {
+    padding: 15px 0;
+    margin: 0;
+}
+
+.Chart-row__title {
+    display: flex;
+    justify-content: flex-end;
+    width: 150px;
+}

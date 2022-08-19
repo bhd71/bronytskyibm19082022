@@ -1,26 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {useState} from 'react';
+import './style.css'
+import Chart from "./components/chart/Chart";
+import Button from "./components/button/Button";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const [data, setData] = useState([{name: "Landing Page", time: 7.4},
+        {name: "Configurator", time: 0.2},
+        {name: "Check-out", time: 7.0},
+        {name: "Deal", time: 3.8}])
+    return (
+        <div className={'App'}>
+            <Chart data={data}/>
+            <Button data={data} setData={setData}/>
+        </div>
+    );
 }
 
 export default App;
