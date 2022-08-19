@@ -14,7 +14,6 @@ interface IData {
 
 const Chart: React.FC<IData> = ({data}) => {
 
-
     const sum: number = data.reduce((accum: number, element) => {
         accum += element.time
         return accum

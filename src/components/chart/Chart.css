@@ -4,8 +4,9 @@
 }
 
 .Chart_title {
-    position: relative;
-    left: 15%;
+    margin-top: 5%;
+    padding-left: 20%;
+    color: #5F5D60;
 }
 
 .Chart-row__flex {
@@ -37,4 +38,18 @@
     display: flex;
     justify-content: flex-end;
     width: 150px;
+}
+
+
+@media (max-width: 426px) {
+
+    .Chart_title {
+        margin-top: 40px;
+        font-size: 25px;
+        padding-left: 5%;
+    }
+
+    .Chart-row__flex {
+        gap: 15px;
+    }
 }
